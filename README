@@ -1,0 +1,18 @@
+DEFRAG - Submitted by: Ashish Verma | averma7 | 200290778
+
+Contents of submission:
+defrag.h	defrag.c	Makefile	README
+
+Usage:
+1. To create executable version of defrag, run "make" command.
+2. Use "make clean" with CAUTION, as it will clear any file apart from the above mentioned submissions from the current directory.
+3. To deframent a disk image, run the following command:
+	./defrag <image_name>
+
+Input:
+1. defrag will take exactly one parameter; it will exit with error if any less or any more is provided.
+2. The input image name can't be "disk_defrag", and if that is given, the program will exit. The input image could be renamed and then provided as an input.
+3. The program will also return with error if input image doesn't exist, or output file can't be created.
+
+Output:
+1. The output of the program will be named as "disk_defrag" and placed in the current directory, and any previous file with same name will be overwritten.
